@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <form>
+    <H1>Pizza Ordering Form</H1>
+    <h2>Contact Info</h2>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    <br>
+    <label for="phone">Phone:</label>
+    <input type="phone" name="phone" id="phone" required pattern="[0-9]{10}">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <h2>Pizza Size </h2>
+    <select name="pizzaSize" id="pizzaSize" required>
+        <option>--Select Size--</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>XLarge</option>
+
+    </select>
+
+    <h2>Select pizza sauce </h2>
+    <input type="radio" name="sauce" required><label>red sauce</label><br>
+    <input type="radio" name="sauce"><label>ranch</label><br>
+    <input type="radio" name="sauce"><label>no sauce</label><br>
+
+    <h2>Toppings</h2>
+    <input type="checkbox"><label>pepperoni</label>
+    <input type="checkbox"><label>sausage</label><br>
+    <input type="checkbox"><label>mushroom</label>
+    <input type="checkbox"><label>ricotta</label><br>
+    <input type="checkbox"><label>garlic</label>
+    <input type="checkbox"><label>spinach</label><br>
+
+    <h2>Additional Instructions</h2>
+    <textarea name="comments">Add Instructions</textarea><br>
+
+    <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    
+    <table border="1">
+        <tr>
+            <th>Developer</th>
+            <th>Title</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Bungie</td>
+            <td>Halo ODST</td>
+            <td>2009</td>
+        </tr>
+        <tr>
+            <td>Destiny</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>Embark</td>
+            <td>The Finals</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>Mojang</td>
+            <td>Minecraft</td>
+            <td>2011</td>
+        </tr>
+        <tr>
+            <td colspan="3">Count: 4</td>
+        </tr>
+
+
+    </table>
+
+</html>
