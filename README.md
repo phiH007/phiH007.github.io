@@ -5,6 +5,6 @@ In use for CIS4004
 ---
 
 ## Assignments
-[Resume](resume.html)
+[Resume](./resume/resume.html)
 
 [Forms and Tables](form.html)
