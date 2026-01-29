@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(152, 194, 231);
+    line-height: 1.5vw;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#paragraph2{
+    border-style: solid;
+    border-width: .2em;
+    border-color: green;
+    margin: 20px;
+    background-color: white;
+    padding: 1.2em;
+    width: 50em;
+}
+
+.blue{
+    color: white;
+    border-style: solid;
+    border-width: .2em;
+    border-color: black;
+    background-color: rgb(1, 11, 116);
+    padding: .5em;
+}
+
+a.red{
+    color: red;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: .1em solid;
+    padding: .4em;
+}
+th{
+    background-color: rgb(167, 166, 166);
+    text-align: center;
+    border: .1em solid;
+}
+td{
+    background-color: white;
+    text-align: justify;
+
+}
+ol{
+    list-style-type: decimal-leading-zero;
+}
