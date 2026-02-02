@@ -10,3 +10,5 @@ In use for CIS4004
 [Forms and Tables](form.html)
 
 [Basic CSS](./BasicCSS/5_CSS1.html)
+
+[CSS Positioning and Layout](./CSS%20Positioning%20and%20Layout/html-3.html)
