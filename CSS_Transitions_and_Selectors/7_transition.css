@@ -1,0 +1,112 @@
+/* Articles */
+h1{
+    text-align: center;
+    padding-left: 250px;
+    font-size: 2em;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 250px;
+}
+article{
+    color: lightgray;
+    padding: 10px;
+    font-size: .75em;
+    text-align: justify;
+    min-width: 25px;
+    width: 350px;
+    transition: width 2s, font-size 1s, min-height 2s;
+}
+
+article:hover{
+    font-size: 1em;
+    min-height: 450px;
+    width: 450px;
+    color: black;
+}
+
+article > h2 + p::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+article p a::after{
+    content: url(arrow.png);
+}
+
+/* Header */
+header{
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    background-color: orange;
+    text-align: center;
+}
+
+/* Thank You */
+#thanks{
+    position: fixed;
+    font-size: x-large;
+    padding: 20px;
+    bottom: 0;
+    right: 0px;
+    background-color: rgb(125, 164, 211);
+    color: rgb(0, 0, 0);
+}
+
+/* Navigation */
+
+nav{
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    width: 250px;
+    background-color: orange; /* Change to blue/black as per your image */
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#jumpMenu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+}
+
+#jumpMenu a {
+    color: blue;
+    padding: 10px;
+    display: block;
+    font-size: 1em;
+}
+#recentArticles:hover + #jumpMenu{
+    display: block;
+}
+
+#jumpMenu:hover{
+    display: block;
+}
+
+#jumpMenu a:hover{
+    color: black;
+    background-color: lightblue;
+
+}
+
+nav button {
+    width: 100%;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    display: block;
+}
