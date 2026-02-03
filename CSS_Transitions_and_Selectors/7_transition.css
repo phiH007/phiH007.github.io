@@ -102,11 +102,33 @@ nav{
 
 }
 
-nav button {
+nav button{
     width: 100%;
     padding: 15px;
     background-color: blue;
     color: white;
     border: 1px solid black;
     display: block;
+}
+
+nav button:hover{
+    color: black;
+    background-color: lightblue;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    padding-left: 300px;
+}
+footer p{
+    font-size: 2em;
+}
+footer address div{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 1.5em;
 }
