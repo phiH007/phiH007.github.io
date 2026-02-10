@@ -1,33 +1,73 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: monospace;
     line-height: 1.5;
     color: black;
     background-color: cornsilk;
     margin: auto;
     padding: 20px;
-    max-width: 900px; 
+    max-width: 800px; 
 }
 
 h1, h2, h3 {
-    color: royalblue;
     margin-bottom: 10px;
 }
-header{
-    text-align: center;
+h1{
+    color: #0054A1;
 }
+h2 {
+    color: #00305A;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
 
 /* Mobile devices */
 @media only screen and (max-width: 412px) {
     body{
-        font-size: 14px;
+        font-size: clamp(16px, 5vw, 20px);
+        padding: 15px;
+    }
+    hr{
+        color: #0073E0;
+    }
+    h1 {
+        font-size: clamp(28px, 10vw, 40px);    
+    }
+    header { 
+        text-align: center;
     }
 
 }
 
 /* Computers */
 @media only screen and (min-width: 1920px) {
-    body{
-        font-size: clamp(14px, 1.5vw, 16px);
+    body {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        max-width: 1400px;
+        font-size: clamp(18px, 1vw, 24px);
+
+    }
+    hr{
+        display: none;
     }
 
+    #Projects, header, #Education{
+        grid-column: 1;
+    }
+    #Skills, #Experience, #Professional_Summary{
+        grid-column: 2;
+    }
+
+    h1{
+        font-size: clamp(35px, 2.5vw, 50px);
+    }
 }
