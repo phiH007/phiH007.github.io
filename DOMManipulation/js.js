@@ -49,3 +49,47 @@ function showFilter(){
         filter.style.display = "block";
     }
 }
+
+// filter articles
+function filterArticles(){
+    let opinion = document.getElementById("opinionCheckbox");
+    let recipe = document.getElementById("recipeCheckbox");
+    let update = document.getElementById("updateCheckbox");
+
+    let Oarticles = document.querySelectorAll(".opinion");
+    let Rarticles = document.querySelectorAll(".recipe");
+    let Uarticles = document.querySelectorAll(".update");
+
+    if (opinion.checked == false){
+        Oarticles.forEach(article =>{
+            article.style.display = "none";
+        })
+    } 
+    else if (opinion.checked == true){
+        Oarticles.forEach(article =>{
+            article.style.display = "block";
+        })
+    } 
+
+    if (recipe.checked == false){
+        Rarticles.forEach(article =>{
+            article.style.display = "none";
+        })
+    }
+    else if (recipe.checked == true){
+        Rarticles.forEach(article =>{
+            article.style.display = "block";
+        })
+    } 
+ 
+    if (update.checked == false){
+        Uarticles.forEach(article =>{
+            article.style.display = "none";
+        })
+    } 
+    else if (update.checked == true){
+        Uarticles.forEach(article =>{
+            article.style.display = "block";
+        })
+    } 
+}
