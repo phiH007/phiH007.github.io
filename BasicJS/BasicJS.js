@@ -1,7 +1,7 @@
 // Simple Function
 let counter = 0;
 function update(){
-    document.getElementById("counter").innerHTML = counter
+    document.getElementById("counter").innerText = counter
 }
 
 function tickUp(){
@@ -19,7 +19,7 @@ function runForLoop(){
     const temp = []
     for (let i = 0; i <= counter; i++){
         temp.push(i)
-        document.getElementById("forLoopResult").innerHTML = temp.join(" ");
+        document.getElementById("forLoopResult").innerText = temp.join(" ");
     }
 }
 
@@ -30,7 +30,7 @@ function showOddNumbers(){
         if (i%2 == 1){
             temp.push(i)
         }
-        document.getElementById("oddNumberResult").innerHTML = temp.join(" ");
+        document.getElementById("oddNumberResult").innerText = temp.join(" ");
     }
 }    
 
