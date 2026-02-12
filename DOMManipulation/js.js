@@ -41,5 +41,11 @@ function addNewArticle(){
 
 // show filter options
 function showFilter(){
-    
+    let filter = document.getElementById("filterContent");
+    if (filter.style.display != "none"){
+        filter.style.display = "none";
+    }
+    else{
+        filter.style.display = "block";
+    }
 }
