@@ -1,12 +1,12 @@
-// Add new article 
+// Show Add new article form 
 function showAddNew(){
     let form = document.getElementById("newContent");
     form.style.display = "flex";
 }
 
+// adds new article
 function addNewArticle(){
     let titleIn = document.getElementById("inputHeader").value;
-
     let typeIn = document.querySelector('input[name="articleType"]:checked');
     let type = "";
     if (typeIn.id == "opinionRadio") {
@@ -18,7 +18,6 @@ function addNewArticle(){
     else if (typeIn.id == "lifeRadio") {
         type = "Update";
     }
-
     let textIn = document.getElementById("inputArticle").value;
 
     let article = document.createElement("article");
@@ -42,6 +41,7 @@ function addNewArticle(){
 // show filter options
 function showFilter(){
     let filter = document.getElementById("filterContent");
+
     if (filter.style.display != "none"){
         filter.style.display = "none";
     }
