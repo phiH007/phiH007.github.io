@@ -5,25 +5,33 @@
         <link rel="stylesheet" href="css.css">
         <script src="js.js"></script>
     </head>
+    <body>
+        <label for="pokeID">Name or ID: </label>
+            <input id="pokeID" type="text">
+            <button onclick="searchPokeAPI()" type="button">Find</button>
 
-    <label for="pokeID">Name or ID: </label>
-    <input id="pokeID" type="text">
-    <button onclick="searchPokeAPI()" type="button">Find</button>
+            <h2 id="pokeName"></h2>
+            
+            <img id="pokePic" src="">
+            
+            <audio id="pokeSound" controls></audio>
 
-    <audio controls>
-        <source src="" type="audio">
-    </audio>
+            <div id="dropdowns">
+                <div>
+                    <select class="moves"></select>
+                    <select class="moves"></select>
+                    <select class="moves"></select>
+                    <select class="moves"></select>
+                </div>
+            </div>
 
-    <div class="dropdowns">
-        <div>
-            <select></select>
-            <select></select>
-        </div>
-        <div>
-            <select></select>
-            <select></select>
-        </div>
-    </div>
+            <br>
+            <button onclick="addTeam()" type="button">Add Member to Team</button>
+            <div id="team">
 
+            </div>
+
+    </body>
+    
 
 </html>

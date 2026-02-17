@@ -31,7 +31,7 @@ function displayPokemon(data){
     let image = document.getElementById("pokePic");
     image.src = data.sprites.front_default;
 
-    let audio = document.getElementById("noise");
+    let audio = document.getElementById("pokeSound");
     audio.src = data.cries.latest;
     document.getElementById("pokeSound").load();
 
@@ -50,22 +50,26 @@ function displayPokemon(data){
 }
 
 function addTeam(){
-    let name = document.createElement("h2");
+    let member = document.createElement("div");
+    member.className = "teammember";
+
+    let name = document.createElement("h3");
     name.textContent = document.getElementById("pokeName").textContent;
 
     let image = document.createElement("img");
     image.src = document.getElementById("pokePic").src;
 
-    document.getElementById("team").appendChild(name);
-    document.getElementById("team").appendChild(image);
+    member.appendChild(name);
+    member.appendChild(image);
 
     let dropdowns = document.getElementsByClassName("moves");
     for (let i = 0; i < dropdowns.length; i++){
         let temp = document.createElement("li")
         temp.innerText = dropdowns[i].value;
 
-        document.getElementById("team").appendChild(temp);
+        member.appendChild(temp);
     }
 
+    document.getElementById("team").appendChild(member);
 
 }

@@ -29,12 +29,13 @@ label, button{
 #pokePic{
     display: block;
     margin-left: auto;
-    margin-left: auto;
+    margin-right: auto;
     width: 75%;
 }
 
 #dropdowns{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin-left: auto;
@@ -51,6 +52,6 @@ label, button{
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px;
     border: 2px solid gold;
 }
