@@ -16,3 +16,5 @@ In use for CIS4004
 [CSS Transitions and Selectors](./CSS_Transitions_and_Selectors/html-6.html)
 
 [Basic JavaScript](./BasicJS/html.html)
+
+[DOM Manipulation](./DOMManipulation/html.html)
