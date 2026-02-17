@@ -1,0 +1,56 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 350px;
+    margin: auto;
+    padding: 12vw;
+    padding-top: 8vw;
+    border: 5px solid black;
+}
+
+#pokeName{
+    left: 50%;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+label, button{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+#pokeID{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#pokePic{
+    display: block;
+    margin-left: auto;
+    margin-left: auto;
+    width: 75%;
+}
+
+#dropdowns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.moves{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid gold;
+}
